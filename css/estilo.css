@@ -253,4 +253,71 @@ legend {
     opacity: 1; /* Firefox */
 }
 
+#patrocinadores-card h2{
+    font-family: 'Handjet', sans-serif;
+    font-size: 34px;
+    color: var(--cor4);
+}
+
+#patrocinadores-card p {
+    text-align: justify;
+    color: var(--cor5);
+}
+
+#patrocinador1 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 150px;
+}
+
+#patrocinador2 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding-top: 20px;
+}
+
+#patrocinador3 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding-top: 20px;
+}
+
+#patrocinador4 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding-top: 20px;
+}
+
+#patrocinador5 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding-top: 20px;
+}
+
+.text-patrocinador {
+    flex: 40%;
+    margin-left: 10%;
+}
+
+.img-patrocinador {
+    flex: 40%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.text-patrocinador-inverso {
+    flex: 40%;
+    margin-right: 10%;
+}
+
+.img-patrocinador-inverso {
+    flex: 40%;
+    margin-left: 10%;
+    text-align: center;
+}
 
