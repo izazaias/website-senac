@@ -24,7 +24,7 @@ body {
     height: 100px;
     justify-content: space-between;
     align-items: center;
-    background: var(--cor1);
+    background: white;
     position: fixed;
     width: 100%;
 }
@@ -108,7 +108,7 @@ body {
 }
 
 .headline p {
-    color: var(--cor2);
+    color: var(--cor1);
     text-align: left;
 }
 
@@ -198,3 +198,59 @@ footer {
     font-family: 'Handjet', sans-serif;
     color: var(--cor1);
 }
+
+form {
+    background-color: var(--cor1);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.8rem;
+    color: #0D8E7B;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: var(--cor5);
+}
+
+.form-control {
+    border-color: var(--cor3);
+    border-radius: 0.25rem;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: var(--cor4);
+    box-shadow: 0 0 0 0.2rem rgba(61, 207, 181, 0.25);
+}
+
+.btn .btn-primary {
+    background-color: var(--cor4);
+    border-color: var(--cor4);
+    font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--cor3);
+    border-color: var(--cor3);
+}
+
+.form-control::placeholder {
+    color: var(--cor5);
+    opacity: 1; /* Firefox */
+}
+
+
