@@ -9,8 +9,13 @@
     --cor5: #44686D;
 }
 
+/* Estilização universal
+------------------------------- */
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -48,7 +53,7 @@ body {
     margin-right: 5%;
     text-align: right;
     /* border: 1px solid deeppink; */
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .menu li {
@@ -70,18 +75,6 @@ body {
 .menu a:hover {
     color: var(--cor3);
     border-top: 2px solid var(--cor4);
-}
-
-#inscricao  a {
-    background: var(--cor5);
-    padding: 10px 25px;
-    color: var(--cor1);
-    border-radius: 5px;
-    border: none;
-}
-
-#inscricao  a:hover {
-    background: var(--cor3);
 }
 
 .header {
@@ -121,6 +114,7 @@ body {
     border-radius: 5px;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 20px;
 }
 
 .participar-btn:hover {
@@ -163,7 +157,8 @@ body {
 .conteudo-text h2 {
     font-size: 35px;
     color: var(--cor4);
-    text-align: center
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .conteudo-btn {
@@ -175,11 +170,27 @@ body {
     color: var(--cor1);
     font-weight: bold;
     display: inline-block;
+    margin-top: 20px;
 }
 
 .conteudo-btn:hover {
     background-color: var(--cor3);
 }
+
+#inscricao a {
+    background: var(--cor5);
+    padding: 10px 25px;
+    color: var(--cor1);
+    border-radius: 5px;
+    border: none;
+}
+
+#inscricao a:hover {
+    background: var(--cor3);
+}
+
+/* rodapé
+----------------------------- */
 
 footer {
     margin-top: 100px;
@@ -199,11 +210,14 @@ footer {
     color: var(--cor1);
 }
 
+/* Seção inscrição
+--------------------------------- */
+
 form {
     background-color: var(--cor1);
     border-radius: 8px;
     padding: 30px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     max-width: 700px;
     margin: 0 auto;
 }
@@ -250,10 +264,35 @@ legend {
 
 .form-control::placeholder {
     color: var(--cor5);
-    opacity: 1; /* Firefox */
+    opacity: 1;
+    /* Firefox */
 }
 
-#patrocinadores-card h2{
+/* Seção palestrantes
+---------------------------------------------- */
+
+.container-carrosel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-top: 70px;
+}
+
+#carouselExampleCaptions {
+    max-width: 700px;
+    max-height: 580px;
+    text-align: center
+}
+
+.d-block .w-100 {
+    width: 600px;
+}
+
+/* Seção Patrocinador
+------------------------------------ */
+
+#patrocinadores-card h2 {
     font-family: 'Handjet', sans-serif;
     font-size: 34px;
     color: var(--cor4);
@@ -265,36 +304,36 @@ legend {
 }
 
 #patrocinador1 {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 150px;
 }
 
 #patrocinador2 {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
     padding-top: 20px;
 }
 
 #patrocinador3 {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
     padding-top: 20px;
 }
 
 #patrocinador4 {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
     padding-top: 20px;
 }
 
 #patrocinador5 {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
     padding-top: 20px;
 }
@@ -320,4 +359,3 @@ legend {
     margin-left: 10%;
     text-align: center;
 }
-
