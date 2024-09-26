@@ -193,7 +193,7 @@ body {
 ----------------------------- */
 
 footer {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     /* height: 400px; */
     background-image: linear-gradient(180deg, var(--cor2), var(--cor4), black);
     text-align: center;
@@ -296,6 +296,7 @@ legend {
     font-family: 'Handjet', sans-serif;
     font-size: 34px;
     color: var(--cor4);
+    padding-bottom: 20px;
 }
 
 #patrocinadores-card p {
@@ -358,7 +359,7 @@ legend {
     flex: 40%;
     margin-left: 10%;
     text-align: center;
-
+}
 ::-webkit-scrollbar {
     width: 15px;
     background-color: var(--cor4);
@@ -369,13 +370,47 @@ legend {
     border-radius: 6px;
 }
 
-.container-carousel {
-    background-color: #44686D;
+.conteudo-palestrante {
+    margin: 0 auto;
+    width: 900px;
+    padding-top: 120px;
 }
 
-#text-carossel {
-    position: absolute;
-    left: 60%;
-    bottom: 25%;
+.conteudo-palestrante section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.img-palestrante {
+    width: 440px;
+    float: left;
+}
+
+.img-palestrante img {
+    border-radius: 20px;
+    border: 5px solid #0D8E7B;
+    box-shadow: -11px 19px 20px 0px;
+}
+
+.text-palestrante {
+    float: right;
+    width: 440px;
+}
+
+.text-palestrante h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: var(--cor4);
+    font-family: 'Handjet', sans-serif;
+}
+
+.text-palestrante p {
     text-align: justify;
+    font-size: 18px;
+}
+
+#cabecalho {
+    position: fixed;
 }
